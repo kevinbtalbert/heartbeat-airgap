@@ -3,18 +3,18 @@ v1.0
 
 
 # Automation for Obtaining Cluster Metadata
-Cluster Name
-Full Cluster unique identifier
-Cloudera Manager Full Version
-Cloudera Runtime Full Version 
-List of Parcels on Cluster
-UUID portion of the license
-Total nodes under management in each cluster
-Total Number of logical cores in each cluster
-Total Size of memory in each cluster
-Total allocated storage for HDFS in each cluster
-Total allocated storage for Ozone in each cluster
-Date/Time of report creation
+1. Cluster Name
+2. Full Cluster unique identifier
+3. Cloudera Manager Full Version
+4. Cloudera Runtime Full Version 
+5. List of Parcels on Cluster
+6. UUID portion of the license
+7. Total nodes under management in each cluster
+8. Total Number of logical cores in each cluster
+9. Total Size of memory in each cluster
+10. Total allocated storage for HDFS in each cluster
+11. Total allocated storage for Ozone in each cluster
+12. Date/Time of report creation
 
 
 # Installation / Run (from Linux host)
@@ -43,10 +43,11 @@ Note that if the above still doesn't work, you can create the virtual environmen
 Running this script is subject to proper configuration / variable assignment in ```heartbeat_airgapped.conf```. It also presupposes proper folder ownership for the directory that the python script is executing from. This script was specifically designed for the most minimal set of permissions necessary, hence, **READ ONLY** permission is sufficient for the CM user you provide in ```heartbeat_airgapped.conf``` to run the script.
 
 1. `heartbeat_airgapped_v1.py` - Runtime/Script
-1. `heartbeat_airgapped.conf` - Configuration file
-1. `requirements.txt` - Pip requirements file
+2. `heartbeat_airgapped.conf` - Configuration file
+3. `requirements.txt` - Pip requirements file
 4. `Cluster 1_2023-08-19 18:33:51.372277.csv` - Sample output csv
 
+~[Minimum CM permissions for CM API user](min-cm-perms.png)
 
 # License and Copyright
 Copyright 2023, Cloudera, Inc.
