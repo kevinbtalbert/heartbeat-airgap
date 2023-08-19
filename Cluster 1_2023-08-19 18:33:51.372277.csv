@@ -1,0 +1,23 @@
+Display Name,Cluster 1
+Cluster Name,Cluster 1
+Cluster UUID,3a08f6dd-ea90-4383-bafe-92a9c425802e
+Cluster Runtime Version,7.1.8
+
+Parcel Name / Version (Activated),CDH 7.1.8-1.cdh7.1.8.p3.44296689
+Parcel Name / Version (Activated),OZONE 718.2.0-1.ozone718.2.0.p0.41416957
+
+HDFS-1 dfs_capacity,725.3966789245605 GiB
+HDFS-1 dfs_capacity_used_non_hdfs,44.000782252156306 GiB
+HDFS-1 dfs_capacity_used,8.847485984276448 GiB
+
+Ozone storage capacity,755.3966789245605 GiB
+Ozone storage used,0.4377419101074338 GiB
+Ozone storage remaining,633.7459297180176 GiB
+
+Total Number of Hosts (Commissioned only),4
+Total Logical Cores (Commissioned only),224
+Total Physical Cores (Commissioned only),112
+Total Physical Memory (Commissioned only),2012.5092582702637 GiB
+
+Cloudera Manager Version,7.11.3
+Capture Date/Time,2023-08-19 18:33:51.372264
