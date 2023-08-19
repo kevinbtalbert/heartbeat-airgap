@@ -47,7 +47,7 @@ Running this script is subject to proper configuration / variable assignment in 
 3. `requirements.txt` - Pip requirements file
 4. `Cluster 1_2023-08-19 18:33:51.372277.csv` - Sample output csv
 
-~[Minimum CM permissions for CM API user](min-cm-perms.png)
+![Minimum CM permissions for CM API user](min-cm-perms.png)
 
 # License and Copyright
 Copyright 2023, Cloudera, Inc.
