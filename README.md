@@ -36,7 +36,9 @@ Because of the nature of airgapped hosts, it may be that you are not able to con
 5. Execute the python script by running ```python heartbeat_airgapped_v1.py``` from within the virtual environment.
 6. Copy the created file(s) wherever needed via your local file browser and type ```deactivate``` to close the virtual environment.
 
-Note that if the above still doesn't work, you can create the virtual environment on an internet-connected PC and copy the files to the host with a connection to the CM server after; however, you will have to symlink the python distro to your current python version on that host for the virtual environment to work there.
+The ```offline_pip_dependencies``` folder is provided for totally airgapped customers to leverage if they do not have access to pip altogether. It contains the wheels and tars that a pip install pulling from PyPi or proxy of PyPi would provide.
+
+Note that if the above still doesn't work, you can create the virtual environment on an internet-connected PC and copy the files to the host with a connection to the CM server after; however, you will have to symlink the python distro to your current python version on that host for the virtual environment to work there. 
 
 
 # Definitions
@@ -46,6 +48,7 @@ Running this script is subject to proper configuration / variable assignment in 
 2. `heartbeat_airgapped.conf` - Configuration file
 3. `requirements.txt` - Pip requirements file
 4. `Cluster 1_2023-08-19 18:33:51.372277.csv` - Sample output csv
+5. `offline_pip_dependencies` - Wheels and tars for offline pip install of dependencies
 
 ![Minimum CM permissions for CM API user](min-cm-perms.png)
 
