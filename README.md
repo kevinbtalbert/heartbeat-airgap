@@ -27,7 +27,7 @@ Data Services & ECS Support, Optional hardware SKU/versioning
 2. Run ```source venv/bin/activate``` to start the virtual environment.
 3. Run ```pip install -r requirements.txt``` to install the necessary artifacts from PyPi to run the script (total size is ~35mbs).
 4. Use ```vim``` or another similar command line editor to ensure the ```heartbeat_airgapped.conf``` file has the proper configuration to run the script.
-5. Execute the python script by running ```python heartbeat_airgapped_v1.py``` from within the virtual environment.
+5. Execute the python script by running ```python heartbeat_airgapped_v2.py``` from within the virtual environment.
 6. Copy the created file(s) wherever needed via ```scp```, ```cp```, or a similar command and type ```deactivate``` to close the virtual environment.
 
 
@@ -38,7 +38,7 @@ Because of the nature of airgapped hosts, it may be that you are not able to con
 2. Run ```source venv/bin/activate``` to start the virtual environment.
 3. Run ```pip install -r requirements.txt``` to install the necessary artifacts from PyPi to run the script (total size is ~35mbs).
 4. Use ```vim``` or another similar command line editor to ensure the ```heartbeat_airgapped.conf``` file has the proper configuration to run the script.
-5. Execute the python script by running ```python heartbeat_airgapped_v1.py``` from within the virtual environment.
+5. Execute the python script by running ```python heartbeat_airgapped_v2.py``` from within the virtual environment.
 6. Copy the created file(s) wherever needed via your local file browser and type ```deactivate``` to close the virtual environment.
 
 The ```offline_pip_dependencies``` folder is provided for totally airgapped customers to leverage if they do not have access to pip altogether. It contains the wheels and tars that a pip install pulling from PyPi or proxy of PyPi would provide.
@@ -49,11 +49,12 @@ Note that if the above still doesn't work, you can create the virtual environmen
 # Definitions
 Running this script is subject to proper configuration / variable assignment in ```heartbeat_airgapped.conf```. It also presupposes proper folder ownership for the directory that the python script is executing from. This script was specifically designed for the most minimal set of permissions necessary, hence, **READ ONLY** permission is sufficient for the CM user you provide in ```heartbeat_airgapped.conf``` to run the script.
 
-1. `heartbeat_airgapped_v1.py` - Runtime/Script
+1. `heartbeat_airgapped_v2.py` - Runtime/Script
 2. `heartbeat_airgapped.conf` - Configuration file
 3. `requirements.txt` - Pip requirements file
-4. `Cluster 1_2023-08-19 18:33:51.372277.csv` - Sample output csv
-5. `offline_pip_dependencies` - Wheels and tars for offline pip install of dependencies
+4. `Basic Cluster (Kerberos)_2023-08-28 13:28:22.275554` - Sample output csv
+5. `/offline_pip_dependencies` - Wheels and tars for offline pip install of dependencies
+6. `/archive` - Archived/older versions
 
 ![Minimum CM permissions for CM API user](min-cm-perms.png)
 
