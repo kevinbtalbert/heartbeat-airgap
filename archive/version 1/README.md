@@ -1,29 +1,24 @@
 # Project Heartbeat for Airgapped Customers
-v2.0
-
-# New Additions
-Data Services & ECS Support, Optional hardware SKU/versioning
+v1.0
 
 
 # Automation for Obtaining Cluster Metadata
 1. Cluster Name
-2. Cluster Type (Exp, Base, Compute)
-3. Full Cluster unique identifier
-4. Cloudera Manager Full Version
-5. Cloudera Runtime Full Version 
-6. List of Parcels on Cluster
-7. UUID portion of the license
-8. (Optional) Hardware distro, version, type
-9. Total nodes under management in each cluster
-10. Total Number of logical cores in each cluster
-11. Total Size of memory in each cluster
-12. Total allocated storage for HDFS in each cluster
-13. Total allocated storage for Ozone in each cluster
-14. Date/Time of report creation
+2. Full Cluster unique identifier
+3. Cloudera Manager Full Version
+4. Cloudera Runtime Full Version 
+5. List of Parcels on Cluster
+6. UUID portion of the license
+7. Total nodes under management in each cluster
+8. Total Number of logical cores in each cluster
+9. Total Size of memory in each cluster
+10. Total allocated storage for HDFS in each cluster
+11. Total allocated storage for Ozone in each cluster
+12. Date/Time of report creation
 
 
 # Installation / Run (from Linux host)
-1. Referencing your local python installation, and from the folder you wish to create the output document in, enter the command ```python -m venv venv``` (or `python3` depending on how your python distro is aliased). This command creates a virtual environment for you to ```pip``` install the necessary packages from PyPi from. Note that if you get some kind of error on this step, it is likely because the python3 environment variable is not set, in which case you will have to use the fully qualified path of your python installation before the remainder of the command.
+1. Referencing your local python installation, and from the folder you wish to create the output document in, enter the command ```python -m venv venv```. This command creates a virtual environment for you to ```pip``` install the necessary packages from PyPi from. Note that if you get some kind of error on this step, it is likely because the python3 environment variable is not set, in which case you will have to use the fully qualified path of your python installation before the remainder of the command.
 2. Run ```source venv/bin/activate``` to start the virtual environment.
 3. Run ```pip install -r requirements.txt``` to install the necessary artifacts from PyPi to run the script (total size is ~35mbs).
 4. Use ```vim``` or another similar command line editor to ensure the ```heartbeat_airgapped.conf``` file has the proper configuration to run the script.

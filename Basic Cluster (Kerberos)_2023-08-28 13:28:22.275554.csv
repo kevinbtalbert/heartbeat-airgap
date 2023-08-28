@@ -1,0 +1,35 @@
+Display Name,DScluster
+Cluster Name,DScluster
+Cluster Type,EXPERIENCE_CLUSTER
+Cluster UUID,c8fee4f9-5c54-437c-8092-96745882c445
+Cluster Runtime Version,1.5.1
+Parcel Name / Version (Activated),ECS 1.5.1-b626-ecs-1.5.1-b626.p0.42068229
+Hardware Specs,RHEL7 centos 7.9.2009
+Number of Hosts in DScluster (Commissioned only),8
+Total Logical Cores in DScluster (Commissioned only),320
+Total Physical Cores in DScluster (Commissioned only),160
+Total Physical Memory in DScluster (Commissioned only),2010.7595176696777 GiB
+
+Display Name,Basic Cluster (Kerberos)
+Cluster Name,Basic Cluster (Kerberos)
+Cluster Type,BASE_CLUSTER
+Cluster UUID,ffc68ca4-a3d1-4734-a68a-710effa031a4
+Cluster Runtime Version,7.1.7
+Parcel Name / Version (Activated),CDH 7.1.7-1.cdh7.1.7.p0.15945976
+Parcel Name / Version (Activated),CFM 2.0.4.0-80
+Parcel Name / Version (Activated),KEYTRUSTEE_SERVER 7.1.7.0-1.keytrustee7.1.7.0.p0.15945976
+Parcel Name / Version (Activated),SPARK3 3.3.0.3.3.7180.0-274-1.p0.31212967
+hdfs:nameservice1 dfs_capacity,4369.1009521484375 GiB
+hdfs:nameservice1 dfs_capacity_used_non_hdfs,150.146949786786 GiB
+hdfs:nameservice1 dfs_capacity_used,97.65240552937611 GiB
+Ozone storage capacity,11172.629859924316 GiB
+Ozone storage used,16.82953643798828 GiB
+Ozone storage remaining,11155.54443359375 GiB
+Hardware Specs,RHEL7 centos 7.9.2009
+Number of Hosts in Basic Cluster (Kerberos) (Commissioned only),7
+Total Logical Cores in Basic Cluster (Kerberos) (Commissioned only),280
+Total Physical Cores in Basic Cluster (Kerberos) (Commissioned only),140
+Total Physical Memory in Basic Cluster (Kerberos) (Commissioned only),879.0038299560547 GiB
+
+Cloudera Manager Version,7.10.1
+Capture Date/Time,2023-08-28 13:28:22.275511
